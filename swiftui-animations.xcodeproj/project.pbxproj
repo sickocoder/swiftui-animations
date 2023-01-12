@@ -11,6 +11,11 @@
 		2C26F852296FFF3600F8FDBC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C26F851296FFF3600F8FDBC /* ContentView.swift */; };
 		2C26F854296FFF3600F8FDBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C26F853296FFF3600F8FDBC /* Assets.xcassets */; };
 		2C26F857296FFF3600F8FDBC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C26F856296FFF3600F8FDBC /* Preview Assets.xcassets */; };
+		2C26F861296FFFAE00F8FDBC /* LoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C26F860296FFFAE00F8FDBC /* LoadingButton.swift */; };
+		2C26F863296FFFCE00F8FDBC /* CheckmarkShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C26F862296FFFCE00F8FDBC /* CheckmarkShape.swift */; };
+		2C26F8652970004400F8FDBC /* AnimatedCheckmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C26F8642970004400F8FDBC /* AnimatedCheckmarkView.swift */; };
+		2C26F868297001A200F8FDBC /* PulseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C26F867297001A200F8FDBC /* PulseButton.swift */; };
+		2C26F86B297001F700F8FDBC /* ButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C26F86A297001F700F8FDBC /* ButtonLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		2C26F851296FFF3600F8FDBC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2C26F853296FFF3600F8FDBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C26F856296FFF3600F8FDBC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2C26F860296FFFAE00F8FDBC /* LoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButton.swift; sourceTree = "<group>"; };
+		2C26F862296FFFCE00F8FDBC /* CheckmarkShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckmarkShape.swift; sourceTree = "<group>"; };
+		2C26F8642970004400F8FDBC /* AnimatedCheckmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedCheckmarkView.swift; sourceTree = "<group>"; };
+		2C26F867297001A200F8FDBC /* PulseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseButton.swift; sourceTree = "<group>"; };
+		2C26F86A297001F700F8FDBC /* ButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +61,8 @@
 		2C26F84E296FFF3600F8FDBC /* swiftui-animations */ = {
 			isa = PBXGroup;
 			children = (
+				2C26F8662970015E00F8FDBC /* PulseButton */,
+				2C26F85D296FFF6A00F8FDBC /* LoadingButton */,
 				2C26F84F296FFF3600F8FDBC /* swiftui_animationsApp.swift */,
 				2C26F851296FFF3600F8FDBC /* ContentView.swift */,
 				2C26F853296FFF3600F8FDBC /* Assets.xcassets */,
@@ -65,6 +77,49 @@
 				2C26F856296FFF3600F8FDBC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2C26F85D296FFF6A00F8FDBC /* LoadingButton */ = {
+			isa = PBXGroup;
+			children = (
+				2C26F85F296FFF8D00F8FDBC /* Shapes */,
+				2C26F85E296FFF8400F8FDBC /* Views */,
+				2C26F860296FFFAE00F8FDBC /* LoadingButton.swift */,
+			);
+			path = LoadingButton;
+			sourceTree = "<group>";
+		};
+		2C26F85E296FFF8400F8FDBC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2C26F8642970004400F8FDBC /* AnimatedCheckmarkView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2C26F85F296FFF8D00F8FDBC /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				2C26F862296FFFCE00F8FDBC /* CheckmarkShape.swift */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
+		2C26F8662970015E00F8FDBC /* PulseButton */ = {
+			isa = PBXGroup;
+			children = (
+				2C26F869297001E800F8FDBC /* Views */,
+				2C26F867297001A200F8FDBC /* PulseButton.swift */,
+			);
+			path = PulseButton;
+			sourceTree = "<group>";
+		};
+		2C26F869297001E800F8FDBC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2C26F86A297001F700F8FDBC /* ButtonLabel.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +192,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C26F861296FFFAE00F8FDBC /* LoadingButton.swift in Sources */,
+				2C26F86B297001F700F8FDBC /* ButtonLabel.swift in Sources */,
+				2C26F863296FFFCE00F8FDBC /* CheckmarkShape.swift in Sources */,
 				2C26F852296FFF3600F8FDBC /* ContentView.swift in Sources */,
+				2C26F8652970004400F8FDBC /* AnimatedCheckmarkView.swift in Sources */,
 				2C26F850296FFF3600F8FDBC /* swiftui_animationsApp.swift in Sources */,
+				2C26F868297001A200F8FDBC /* PulseButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
